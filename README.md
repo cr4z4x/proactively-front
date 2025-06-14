@@ -23,7 +23,7 @@ This project is a frontend implementation based on the design specifications pro
 All design specifications, including layout, colors, animations, and responsiveness, are defined in the Figma file provided.
 
 - **Figma Link**: [Figma Design File](#)\
-  _Replace the placeholder with the actual design link._
+
 
 ## Project Structure
 
@@ -84,14 +84,4 @@ This project was completed under the following constraints:
 | Adherence to Figma design                       | ✔️     |
 | Implementation of animations as per design      | ✔️     |
 
-## Submission
 
-Upon completion:
-
-1. Ensure all source code is committed and pushed to a **public GitHub repository**
-2. Share the repository URL using the provided [Google Form](#)
-
-## License
-
-This code is intended solely for evaluation purposes as part of a technical assessment.\
-No open-source license is applied.
