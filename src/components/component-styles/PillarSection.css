@@ -1,0 +1,131 @@
+.pillars-section {
+    padding: 100px 0 50px 0;
+    background-color: #ffffff;
+}
+
+.pillars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pillars-title h3 {
+    font-size: 16px;
+    color: #707070;
+    text-transform: uppercase;
+    letter-spacing: 7.5%;
+    margin: 0;
+    font-weight: 500;
+}
+
+.pillars-title h2 {
+    font-size: 26px;
+    color: #707070;
+    margin: 5px 0 0 0;
+    font-weight: 600;
+}
+
+.pillars-title h2 .highlight-text {
+    background: linear-gradient(90deg, #D96E6C 0%, #F0C971 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.pillars-nav-buttons button {
+    background: #fff;
+    border: 1px solid #707070;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #707070;
+    transition: box-shadow 0.2s;
+}
+.pillars-nav-buttons button:hover {
+    box-shadow: 0 0 0 4px #f2f4f7;
+    background-color: black;
+    color: #fff;
+}
+
+.pillars-tabs {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pillar-tab {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.pillar-tab.active, .pillar-tab:hover {
+    background-color: black; 
+    color: white;
+    border-color: #707070;
+}
+
+.pillars-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Firefox */
+}
+.pillars-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.pillars-content > * {
+    flex: 0 0 450px;
+}
+
+/* Hide nav buttons and tabs on mobile */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .pillars-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .pillars-title h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .pillars-title h3 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .pillars-content {
+    overflow-x: auto;
+    display: flex;
+    gap: 12px;
+    padding-bottom: 16px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .pillars-content > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+}
